@@ -1,7 +1,7 @@
 "use strict";
 
 //テーブルの横幅
-let width = 20;
+let width = 8;
 //テーブルの縦幅
 let height = 10;
 //爆弾の割合
