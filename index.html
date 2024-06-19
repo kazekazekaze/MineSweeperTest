@@ -14,25 +14,27 @@
         <table id="pre_field" oncontextmenu="return false;"></table>
         <table id="field" oncontextmenu="return false;"></table>
         <p id="message"></p>
-        <div id="info">
-            <p>むずかしさ：<span id="difficulity"></span></p>
-            <p>💣のこり：<span id="bomb_remained"></span></p>
-            <p>じかん: <span id="timer">0</span> 秒</p>
-        </div>
-        <div id="ui">
-            <h3>むずかしさを選択</h3>
-            <div id="select_diff">
-                <button id="easy">かんたん</button>
-                <button id="normal">ふつう</button>
-                <button id="hard">むずかしい</button>
+        <div id = interfaces>
+            <div id="info">
+                <p>むずかしさ：<span id="difficulity"></span></p>
+                <p>💣のこり：<span id="bomb_remained"></span></p>
+                <p>じかん: <span id="timer">0</span> 秒</p>
             </div>
-            <h3>おおきさを選択</h3>
-            <div id="select_size">
-                <p>たて：　<input id="height" type="range" min="5" max="20"></p>
-                <p>よこ：　<input id="width" type="range" min="5" max="20"></p>
+            <div id="ui">
+                <h3>むずかしさを選択</h3>
+                <div id="select_diff">
+                    <button id="easy">かんたん</button>
+                    <button id="normal">ふつう</button>
+                    <button id="hard">むずかしい</button>
+                </div>
+                <h3>おおきさを選択</h3>
+                <div id="select_size">
+                    <p>たて：　<input id="height" type="range" min="5" max="20"></p>
+                    <p>よこ：　<input id="width" type="range" min="5" max="20"></p>
+                </div>
+                <h3>ゲームをはじめる</h3>
+                <button id="start">スタート</button>
             </div>
-            <h3>ゲームをはじめる</h3>
-            <button id="start">スタート</button>
         </div>
     </body>
 </html>
