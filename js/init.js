@@ -24,20 +24,14 @@ let tap_y = -1;
 
 //UIの初期化
 function init_user_interface(){
-    document.getElementById("easy").onclick = function(){
-        mine_per_cell = 0.15;
-    }
-    document.getElementById("normal").onclick = function(){
-        mine_per_cell = 0.25;
-    }
-    document.getElementById("hard").onclick = function(){
-        mine_per_cell = 0.45;
-    }
-
+    document.getElementById("easy").onclick = function(){mine_per_cell = 0.15;};
+    document.getElementById("normal").onclick = function(){mine_per_cell = 0.25;};
+    document.getElementById("hard").onclick = function(){mine_per_cell = 0.45;};
     document.getElementById("width").onchange = size_changer;
     document.getElementById("height").onchange = size_changer;
-
     document.getElementById("start").onclick = init_minesweeper_pre;
+
+    init_minesweeper_pre();
 }
 
 function init_minesweeper_pre() {
