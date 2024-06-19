@@ -1,3 +1,7 @@
+body{
+    display: inline-box;
+}
+
 td{
     border: solid 1px black;
     background-color: rgb(161, 161, 161);
