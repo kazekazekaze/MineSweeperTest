@@ -1,0 +1,71 @@
+td{
+    border: solid 1px black;
+    background-color: rgb(161, 161, 161);
+    height: 22px;
+    width: 22px;
+    font-size: 14px;
+    text-align: center;
+    text-shadow:1px 1px 0 #000, -1px -1px 0 #000,
+              -1px 1px 0 #000, 1px -1px 0 #000,
+              0 1px 0 #000,  0 -1px 0 #000,
+              -1px 0 0 #000, 1px 0 0 #000;
+}
+
+#pre_f{
+    background-color: #fff;
+    border: solid 1px black;
+}
+ 
+.placed{ 
+    background-color: red;
+}
+
+.red{
+    color: red;
+}
+
+.uncheck{
+    background-color: rgb(236, 236, 236);
+    box-shadow: black 0 2px 2px 0;
+}
+
+.uncheck:hover{
+    background-color: #cbcbcb;
+    box-shadow: none;
+}
+
+.bomb_1{
+    color:rgb(72, 243, 255);
+}
+
+.bomb_2{
+    color:rgb(162, 255, 81);
+}
+
+.bomb_3{
+    color:rgb(246, 254, 82);
+}
+
+.bomb_4{
+    color:rgb(255, 119, 0);
+}
+
+.bomb_5{
+    color:rgb(255, 72, 0);
+}
+
+.bomb_6{
+    color:rgb(142, 0, 116);
+}
+
+.bomb_7{
+    color:rgb(44, 0, 114);
+}
+
+.bomb_8{
+    color:rgba(71, 0, 0, 0.518);
+}
+
+.bomb_9{
+    color:rgb(0, 0, 0);
+}

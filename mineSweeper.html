@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" lang="ja">
+        <title>MINESWEEPER</title>
+        <link rel="stylesheet" href="./css/mineSweeper.css">
+        <script src="./js/init.js"></script>
+        <script src="./js/util.js"></script>
+        <script src="./js/screenUpData.js"></script>
+
+    </head>
+    <body onload="init_user_interface()">
+        <h2>マインスイーパー(仮)</h2>
+        <table id="pre_field" oncontextmenu="return false;"></table>
+        <table id="field" oncontextmenu="return false;"></table>
+        <p id="message"></p>
+        <div id="info">
+            <p>むずかしさ：<span id="difficulity"></span></p>
+            <p>💣のこり：<span id="bomb_remained"></span></p>
+            <p>じかん: <span id="timer">0</span> 秒</p>
+        </div>
+        <div id="ui">
+            <h3>むずかしさを選択</h3>
+            <div id="select_diff">
+                <button id="easy">かんたん</button>
+                <button id="normal">ふつう</button>
+                <button id="hard">むずかしい</button>
+            </div>
+            <h3>おおきさを選択</h3>
+            <div id="select_size">
+                <p>たて：　<input id="height" type="range" min="5" max="20"></p>
+                <p>よこ：　<input id="width" type="range" min="5" max="20"></p>
+            </div>
+            <h3>ゲームをはじめる</h3>
+            <button id="start">スタート</button>
+        </div>
+    </body>
+</html>
