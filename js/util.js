@@ -35,3 +35,12 @@ function cleartable(table_name){
         document.getElementById(table_name).removeChild(cells[0]);    
     }
 }
+
+function disableInterfaces(){
+    document.getElementById("easy").disabled;
+    document.getElementById("normal").disabled;
+    document.getElementById("hard").disabled;
+
+    document.getElementById("height").disabled;
+    document.getElementById("width").disabled;
+}
