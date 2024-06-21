@@ -1,28 +1,23 @@
 "use strict";
 
-//テーブルの横幅
+//TODO:最初の1タッチに保証をつける
+//TODO:情報の初期化と更新
+//TODO:面白い何かを追加（例：横一列一掃　５個旗を立てる
+
+
 let width = 8;
-//テーブルの縦幅
 let height = 10;
-//爆弾の割合
 let mine_per_cell = 0.2;
-//最初の一手で爆発しないようにするための安全マージン
 let margin = 0;
-//安全マージンの最大値
 let margin_max = 3;
-//安全マージンの最小値
 let margin_min = 1;
-//カウント用　爆弾の数
 let mine_num = 0;
-//カウント用　経過時間
 let time = 0;
-//経過時間を測るコルーチンのid
 let timer_id = 0;
 
 let tap_x = -1;
 let tap_y = -1;
 
-//UIの初期化
 function init_user_interface(){
     document.getElementById("easy").onclick = function(){
         mine_per_cell = 0.15;
@@ -37,12 +32,14 @@ function init_user_interface(){
     document.getElementById("width").onchange = size_changer;
     document.getElementById("height").onchange = size_changer;
 
-    document.getElementById("start").onclick = init_minesweeper_pre;
+    init_minesweeper_pre();
 }
 
 function init_minesweeper_pre() {
-    cleartable("pre_field");
-    let table = document.getElementById("field");
+    if(document.getElementById("pre_field").hasChildNodes){
+        cleartable("pre_field");
+    }
+    let table = document.getElementById("pre_field");
     for (let i = 0; i < height; i++) {
         let tr = document.createElement("tr");
         for (let j = 0; j < width; j++) {
@@ -70,7 +67,6 @@ function first_tap(e) {
     restart();
 }
 
-//ゲーム開始！！
 function init_minesweeper() {
     init_Table();
     init_field(tap_x, tap_y);
@@ -206,10 +202,9 @@ function size_changer(e){
     }else{
         height = e.target.value;
     }
-    show_field_pre();
+    init_minesweeper_pre();
 }
 
-//ゲームが始まる前のテーブルを表示させる処理
 function show_field_pre(){
     let pre_f = document.getElementById("pre_field");
     for (let i = 0; i < height; i++) {

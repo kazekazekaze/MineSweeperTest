@@ -110,10 +110,12 @@ function bomb_remained(){
 }
 
 function restart(){
+    cleartable("pre_field");
     tap_num = 0;
     console.log("minesweeper system rebooting...");
     cleartable("field");
     stoptimer(timer_id);
     init_minesweeper();
     clicked({"target": document.getElementById(tap_y + "," + tap_x), "button" : 0});
+    
 }

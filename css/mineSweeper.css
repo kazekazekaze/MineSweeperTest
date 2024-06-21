@@ -2,6 +2,14 @@ body{
     display: flex;
 }
 
+#main{
+    width:70%;
+}
+
+#interface{
+    width:30%;
+}
+
 td{
     border: solid 1px black;
     background-color: rgb(161, 161, 161);
@@ -13,14 +21,6 @@ td{
               -1px 1px 0 #000, 1px -1px 0 #000,
               0 1px 0 #000,  0 -1px 0 #000,
               -1px 0 0 #000, 1px 0 0 #000;
-}
-
-#main{
-    width: 70%;
-}
-
-#interface{
-    width: 30%;
 }
 
 #pre_f{
